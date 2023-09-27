@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Watchlists</h1>
+<h1 class="title">Movies</h1>
 
 <div id="watchlists">
   <% @watchlists.each do |watchlist| %>
@@ -11,5 +11,9 @@
   <% end %>
 </div>
 
-<%= link_to "New watchlist", new_watchlist_path %>
+<div class="addbutton">
+<%= link_to "Add a new movie", new_watchlist_path, class: "btn btn-primary mb-3" %>
+</div>
+
+
 

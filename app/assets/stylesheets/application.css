@@ -9,14 +9,41 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
  */
 
+/* make the nav bar writing black. Decide to keep the "Watchlist" white because I felt like it. */
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
 
+/* Center the text within elements with the "title" class */
+.title {
+  text-align: center;
+}
 
-  .navbar-dark .navbar-nav .nav-link {
-    color: black;
-  }
+.addbutton {
+  text-align: center; /* Center horizontally */
+}
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
