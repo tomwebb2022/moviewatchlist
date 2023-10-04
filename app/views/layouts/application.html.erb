@@ -29,11 +29,22 @@
         <li class="nav-item">
           <a class="nav-link <%= 'active' if current_page?(controller: 'pages', action: 'about') %>" href="/pages/about">About</a>
         </li>
+        
+
+
+
+
+
+
+
+        
       </ul>
     </div>
   </div>
 </nav>
     <div class="container mt-5">  
+      <p class="notice"><%= notice %></p> 
+  <p class="alert"><%= alert %></p> 
     <%= yield %>
 </div>
 
